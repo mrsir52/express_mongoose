@@ -24,7 +24,9 @@ avatar: {
 date: {
     type: Date,
     default: Date.now
-},
-})
+} 
+}, {collection: 'users'}
+
+)
 
 module.exports = User = mongoose.model('users', UserSchema)

@@ -53,7 +53,9 @@ const PostSchema = new Schema({
         type: Date,
         default: Date.now
     }
-})
+},
+{collection: 'posts'}
+)
 
 
 module.exports = Post = mongoose.model('post', PostSchema)
