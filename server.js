@@ -36,9 +36,9 @@ app.use('/api/users', users)
 app.use('/api/profile', profile)
 app.use('/api/posts', posts)
 
+app.get('./', (req, res)=> 'hello world')
 
-const port = process.env.PORT || 5000;
-
+const port = process.env.PORT || 4000;
 
 
 
